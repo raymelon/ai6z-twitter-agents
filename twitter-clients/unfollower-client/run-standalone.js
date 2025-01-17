@@ -1,0 +1,3 @@
+import { runStandalone } from ".";
+
+runStandalone();
