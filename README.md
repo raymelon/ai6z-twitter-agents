@@ -1,4 +1,4 @@
-# This repo demonstrates how to use [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client) in different agentic frameworks
+# This repo demonstrates how to use [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client) in various agentic frameworks
 
 The idea is to demonstrate how [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client), an unofficial Twitter client, can be used in different agentic frameworks ([Composio](https://composio.dev/), [CrewAI](https://www.crewai.com/), etc.)
 
