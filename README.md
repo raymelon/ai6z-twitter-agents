@@ -13,6 +13,7 @@ The idea is to demonstrate how [ai6z/agent-twitter-client](https://github.com/ai
 - Tweet search
 - User lookup
 - [Unfollower tracking + Telegram bot notifs](/twitter-clients/unfollower-client/)
+- More in [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client#README)
 
 ## DO THIS FIRST ⚠️:
 
