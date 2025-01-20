@@ -122,4 +122,30 @@ node agent-gemini-vercel.js
 
 ### Using [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client) in CrewAI
 
-🚧 WIP (contributions are welcome) 🚧
+#### To setup CrewAI for this project:
+
+1. Make sure the current working directory is on `/crewai_agent` by running
+
+```javascript
+cd crewai_agent
+```
+
+2. Make sure `/crewai_agent/.env` is populated
+
+```
+# /crewai_agent/.env
+MODEL=gemini/gemini-1.5-pro
+GEMINI_API_KEY=XXX
+```
+
+3. Follow [CrewAI installation guide](https://github.com/crewAIInc/crewAI/tree/main?tab=readme-ov-file#getting-started-with-installation)
+
+Skip setting up a new crew because we already have a crew in place for this project
+
+### To run agents using CrewAI
+
+```bash
+crewai run
+```
+
+or follow [CrewAI's guide to running your crew](https://github.com/crewAIInc/crewAI/tree/main?tab=readme-ov-file#3-running-your-crew)

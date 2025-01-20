@@ -1,0 +1,7 @@
+follower_fetcher_task:
+  description: >
+    Fetch latest followers for {username}
+    Tracks unfollowers afterwards
+  expected_output: >
+    Just output if the task is completed
+  agent: follower_fetcher

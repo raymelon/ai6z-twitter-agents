@@ -1,6 +1,6 @@
 require('dotenv').config({
   path: '../twitter-clients/unfollower-client/.env',
-  debug: true
+  // debug: true
 });
 const { execSync } = require('child_process');
 const { Scraper } = require('agent-twitter-client');
@@ -10,15 +10,10 @@ const axios = require('axios');
 const readline = require('readline');
 const path = require('path');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 // Ensure base directory exists
 const BASE_PATH = process.env.BASE_PATH || './';
 if (!fs.existsSync(BASE_PATH)) {
-  fs.mkdirSync(BASE_PATH, { recursive: true });
+  console.log(`BASE_PATH ${BASE_PATH} does not exist.`);
 }
 
 function getCookies(scraper) {
@@ -263,6 +258,11 @@ async function runTwitterAgent(username = 'pseudokid') {
 // script entry point - start
 
 async function runStandalone() {
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
 
   // Prompt user to run immediately with 10-second timer
   const timerDuration = 10000; // 10 seconds
