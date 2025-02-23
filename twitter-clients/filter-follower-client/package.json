@@ -1,0 +1,16 @@
+{
+  "name": "unfollower-client",
+  "version": "1.0.0",
+  "description": "Twitter scraping experiments using ai16z/agent-twitter-client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "agent-twitter-client": "^0.0.18",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  }
+}

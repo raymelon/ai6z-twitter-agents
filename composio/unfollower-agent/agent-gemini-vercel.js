@@ -3,7 +3,7 @@
 
 import { VercelAIToolSet } from "composio-core";
 import dotenv from "dotenv";
-import { runTwitterAgent } from "../twitter-clients/unfollower-client/index.js";
+import { runTwitterAgent } from "../../twitter-clients/unfollower-client/index.js";
 import { google } from "@ai-sdk/google";
 import { generateText } from "ai";
 import { z } from "zod";

@@ -2,7 +2,7 @@
 
 import { OpenAIToolSet } from "composio-core";
 import dotenv from "dotenv";
-import { runTwitterAgent } from "../twitter-clients/unfollower-client/index.js";
+import { runTwitterAgent } from "../../twitter-clients/filter-follower-client/index.js";
 import { OpenAI } from "openai";
 import { z } from "zod";
 
@@ -21,9 +21,9 @@ await toolset.createAction({
   }),
   callback: async (inputParams) => {
     const username = inputParams.username;
-    const response = `Checking unfollowers for: ${username}`;
+    const response = `Filtering followers for: ${username}`;
 
-    console.log('RUNNING Twitter unfollower tracker agent...');
+    console.log('RUNNING Twitter follower filter agent...');
     await runTwitterAgent(username);
     console.log('Agent is done.');
 

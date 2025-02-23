@@ -111,13 +111,13 @@ TWITTER_ACCOUNT_TO_TRACK_UNFOLLOWERS=pseudokid # or your Twitter username
 1. Agent demo using OpenAI (Open AI chat client and Open AI Toolset) - _based on https://docs.composio.dev/patterns/tools/build-tools/custom-action-without-auth_
 
 ```javascript
-node agent-openai.js
+node unfollower-agent/agent-openai.js
 ```
 
 2. Agent demo using Google Gemini and Vercel AI SDK (Google Gemini and Vercel AI Toolset)
 
 ```javascript
-node agent-gemini-vercel.js
+node unfollower-agent/agent-gemini-vercel.js
 ```
 
 ### Using [ai6z/agent-twitter-client](https://github.com/ai16z/agent-twitter-client) in CrewAI
